@@ -1,0 +1,153 @@
+10:52:49.062 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=5ef6cf02-73a1-407b-b478-d2880a4715c4,javaHome=/usr/lib/jvm/java-8-oracle,daemonRegistryDir=/home/mafv/tdd/TP0/template-tp0/gradle/daemon,pid=7196,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=AR,-Duser.language=es,-Duser.variant]
+10:52:49.071 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1458395569071
+10:52:49.101 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface eth0
+10:52:49.101 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+10:52:49.102 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+10:52:49.103 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /fe80:0:0:0:922b:34ff:feb0:24f2%eth0
+10:52:49.103 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /192.168.1.100
+10:52:49.105 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote multicast interface eth0
+10:52:49.105 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface lo
+10:52:49.106 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? true
+10:52:49.107 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? false
+10:52:49.107 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /0:0:0:0:0:0:0:1%lo
+10:52:49.108 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /127.0.0.1
+10:52:49.113 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Listening on [9f93c8b8-58e5-41e2-96df-1ab061d8b25c port:59102, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]].
+10:52:49.118 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Sat Mar 19 10:52:49 ART 2016, with address: [9f93c8b8-58e5-41e2-96df-1ab061d8b25c port:59102, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+10:52:49.119 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertising the daemon address to the clients: [9f93c8b8-58e5-41e2-96df-1ab061d8b25c port:59102, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+10:52:49.119 [DEBUG] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=5ef6cf02-73a1-407b-b478-d2880a4715c4,javaHome=/usr/lib/jvm/java-8-oracle,daemonRegistryDir=/home/mafv/tdd/TP0/template-tp0/gradle/daemon,pid=7196,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=AR,-Duser.language=es,-Duser.variant]
+10:52:49.120 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [9f93c8b8-58e5-41e2-96df-1ab061d8b25c port:59102, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]], context: DefaultDaemonContext[uid=5ef6cf02-73a1-407b-b478-d2880a4715c4,javaHome=/usr/lib/jvm/java-8-oracle,daemonRegistryDir=/home/mafv/tdd/TP0/template-tp0/gradle/daemon,pid=7196,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=AR,-Duser.language=es,-Duser.variant]
+10:52:49.128 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+10:52:49.131 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+10:52:49.170 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+10:52:49.171 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+10:52:49.173 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+10:52:49.175 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] requestStopOnIdleTimeout(10800000 MILLISECONDS) called on daemon
+10:52:49.176 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Idle timeout: waiting for daemon to stop or be idle for 10800000ms
+10:52:49.177 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is idle, sleeping until state change or idle timeout at Sat Mar 19 13:52:49 ART 2016
+10:52:49.181 [DEBUG] [org.gradle.messaging.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:39873 to /127.0.0.1:59102.
+10:52:49.240 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received class org.gradle.launcher.daemon.protocol.Build
+10:52:49.241 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received non-IO message from client: Build{id=b71ebfd0-8bf8-4142-89a3-12b53101e72d.1, currentDir=/home/mafv/tdd/TP0/template-tp0}
+10:52:49.242 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=b71ebfd0-8bf8-4142-89a3-12b53101e72d.1, currentDir=/home/mafv/tdd/TP0/template-tp0}.
+10:52:49.243 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=b71ebfd0-8bf8-4142-89a3-12b53101e72d.1, currentDir=/home/mafv/tdd/TP0/template-tp0} with connection: socket connection from /127.0.0.1:59102 to /127.0.0.1:39873.
+10:52:49.259 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=b71ebfd0-8bf8-4142-89a3-12b53101e72d.1, currentDir=/home/mafv/tdd/TP0/template-tp0}, connection = org.gradle.launcher.daemon.server.DefaultDaemonConnection@7ee8f48a] after 0.0 minutes of idle
+10:52:49.262 [INFO] [org.gradle.launcher.daemon.server.DomainRegistryUpdater] Marking the daemon as busy, address: [9f93c8b8-58e5-41e2-96df-1ab061d8b25c port:59102, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+10:52:49.263 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [9f93c8b8-58e5-41e2-96df-1ab061d8b25c port:59102, addresses:[/0:0:0:0:0:0:0:1%lo, /127.0.0.1]]
+10:52:49.265 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+10:52:49.265 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+10:52:49.271 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+10:52:49.272 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] updating lastActivityAt to 1458395569272
+10:52:49.274 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon is busy, sleeping until state changes.
+10:52:49.278 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=b71ebfd0-8bf8-4142-89a3-12b53101e72d.1, currentDir=/home/mafv/tdd/TP0/template-tp0}. Dispatching build started information...
+10:52:49.279 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 16: dispatching class org.gradle.launcher.daemon.protocol.BuildStarted
+10:52:49.285 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games, XAUTHORITY=/home/mafv/.Xauthority, XMODIFIERS=@im=ibus, XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/, GDMSESSION=ubuntu, MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path, GTK_IM_MODULE=ibus, DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-cflxMfTUSm, DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path, XDG_CURRENT_DESKTOP=Unity, LD_LIBRARY_PATH=/home/mafv/Descargas/idea-IC-143.2287.1/bin:, UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/1147, QT4_IM_MODULE=xim, LOGNAME=mafv, JOB=unity-settings-daemon, PWD=/home/mafv, IM_CONFIG_PHASE=1, LANGUAGE=es_AR:es, SHELL=/bin/bash, GIO_LAUNCHED_DESKTOP_FILE=/home/mafv/.local/share/applications/jetbrains-idea-ce.desktop, INSTANCE=, GNOME_DESKTOP_SESSION_ID=this-is-deprecated, UPSTART_INSTANCE=, GTK_MODULES=overlay-scrollbar:unity-gtk-module, CLUTTER_IM_MODULE=xim, XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0, COMPIZ_BIN_PATH=/usr/bin/, SESSIONTYPE=gnome-session, XDG_SESSION_DESKTOP=ubuntu, SHLVL=0, COMPIZ_CONFIG_PROFILE=ubuntu, QT_IM_MODULE=ibus, UPSTART_JOB=unity7, XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg, LANG=es_AR.UTF-8, GNOME_KEYRING_CONTROL=, XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0, XDG_SESSION_ID=c2, XDG_SESSION_TYPE=x11, DISPLAY=:0, GDM_LANG=es, XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/mafv, UPSTART_EVENTS=xsession started, GPG_AGENT_INFO=/run/user/1000/keyring/gpg:0:1, DESKTOP_SESSION=ubuntu, SESSION=ubuntu, USER=mafv, GIO_LAUNCHED_DESKTOP_FILE_PID=1605, SSH_AUTH_SOCK=/run/user/1000/keyring/ssh, XDG_SEAT=seat0, NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, QT_QPA_PLATFORMTHEME=appmenu-qt5, XDG_VTNR=7, XDG_RUNTIME_DIR=/run/user/1000, HOME=/home/mafv, GNOME_KEYRING_PID=}
+10:52:49.298 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+10:52:49.300 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 7196). The daemon log file: /home/mafv/tdd/TP0/template-tp0/gradle/daemon/2.2/daemon-7196.out.log
+10:52:49.309 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+10:52:49.310 [INFO] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=5ef6cf02-73a1-407b-b478-d2880a4715c4,javaHome=/usr/lib/jvm/java-8-oracle,daemonRegistryDir=/home/mafv/tdd/TP0/template-tp0/gradle/daemon,pid=7196,idleTimeout=10800000,daemonOpts=-XX:MaxPermSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=UTF-8,-Duser.country=AR,-Duser.language=es,-Duser.variant]
+10:52:49.314 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 14: received class org.gradle.launcher.daemon.protocol.CloseInput
+10:52:49.315 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] Received IO message from client: CloseInput[id=b71ebfd0-8bf8-4142-89a3-12b53101e72d.2]
+10:52:49.318 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+10:52:49.319 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+:compileJava
+:processResources UP-TO-DATE
+:classes
+:jar
+:assemble
+:checkstyleMain
+Download https://jcenter.bintray.com/com/puppycrawl/tools/checkstyle/6.7/checkstyle-6.7.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/37/commons-parent-37.pom
+Download https://jcenter.bintray.com/org/apache/apache/16/apache-16.pom
+Download https://jcenter.bintray.com/antlr/antlr/2.7.7/antlr-2.7.7.pom
+Download https://jcenter.bintray.com/org/antlr/antlr4-runtime/4.5/antlr4-runtime-4.5.pom
+Download https://jcenter.bintray.com/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.pom
+Download https://jcenter.bintray.com/org/apache/apache/4/apache-4.pom
+Download https://jcenter.bintray.com/commons-cli/commons-cli/1.3/commons-cli-1.3.pom
+Download https://jcenter.bintray.com/com/google/guava/guava/18.0/guava-18.0.pom
+Download https://jcenter.bintray.com/com/google/guava/guava-parent/18.0/guava-parent-18.0.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/7/oss-parent-7.pom
+Download https://jcenter.bintray.com/com/puppycrawl/tools/checkstyle/6.7/checkstyle-6.7.jar
+Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar
+Download https://jcenter.bintray.com/antlr/antlr/2.7.7/antlr-2.7.7.jar
+Download https://jcenter.bintray.com/org/antlr/antlr4-runtime/4.5/antlr4-runtime-4.5.jar
+Download https://jcenter.bintray.com/commons-beanutils/commons-beanutils-core/1.8.3/commons-beanutils-core-1.8.3.jar
+Download https://jcenter.bintray.com/commons-cli/commons-cli/1.3/commons-cli-1.3.jar
+Download https://jcenter.bintray.com/com/google/guava/guava/18.0/guava-18.0.jar
+:compileTestJava
+:processTestResources UP-TO-DATE
+:testClasses
+:checkstyleTest
+:cpdCheck
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-dist/5.3.0/pmd-dist-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd/5.3.0/pmd-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-core/5.3.0/pmd-core-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-cpp/5.3.0/pmd-cpp-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-cs/5.3.0/pmd-cs-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-fortran/5.3.0/pmd-fortran-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-go/5.3.0/pmd-go-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-java/5.3.0/pmd-java-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-javascript/5.3.0/pmd-javascript-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-jsp/5.3.0/pmd-jsp-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-matlab/5.3.0/pmd-matlab-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-objectivec/5.3.0/pmd-objectivec-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-php/5.3.0/pmd-php-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-plsql/5.3.0/pmd-plsql-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-python/5.3.0/pmd-python-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-ruby/5.3.0/pmd-ruby-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-vm/5.3.0/pmd-vm-5.3.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-xml/5.3.0/pmd-xml-5.3.0.pom
+Download https://jcenter.bintray.com/com/beust/jcommander/1.35/jcommander-1.35.pom
+Download https://jcenter.bintray.com/org/sonatype/oss/oss-parent/3/oss-parent-3.pom
+Download https://jcenter.bintray.com/commons-io/commons-io/2.4/commons-io-2.4.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/25/commons-parent-25.pom
+Download https://jcenter.bintray.com/org/apache/apache/9/apache-9.pom
+Download https://jcenter.bintray.com/jaxen/jaxen/1.1.4/jaxen-1.1.4.pom
+Download https://jcenter.bintray.com/net/java/dev/javacc/javacc/5.0/javacc-5.0.pom
+Download https://jcenter.bintray.com/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/33/commons-parent-33.pom
+Download https://jcenter.bintray.com/org/apache/apache/13/apache-13.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.0.3/asm-parent-5.0.3.pom
+Download https://jcenter.bintray.com/org/ow2/ow2/1.3/ow2-1.3.pom
+Download https://jcenter.bintray.com/org/mozilla/rhino/1.7R4/rhino-1.7R4.pom
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-core/5.3.0/pmd-core-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-cpp/5.3.0/pmd-cpp-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-cs/5.3.0/pmd-cs-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-fortran/5.3.0/pmd-fortran-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-go/5.3.0/pmd-go-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-java/5.3.0/pmd-java-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-javascript/5.3.0/pmd-javascript-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-jsp/5.3.0/pmd-jsp-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-matlab/5.3.0/pmd-matlab-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-objectivec/5.3.0/pmd-objectivec-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-php/5.3.0/pmd-php-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-plsql/5.3.0/pmd-plsql-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-python/5.3.0/pmd-python-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-ruby/5.3.0/pmd-ruby-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-vm/5.3.0/pmd-vm-5.3.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/pmd/pmd-xml/5.3.0/pmd-xml-5.3.0.jar
+Download https://jcenter.bintray.com/com/beust/jcommander/1.35/jcommander-1.35.jar
+Download https://jcenter.bintray.com/commons-io/commons-io/2.4/commons-io-2.4.jar
+Download https://jcenter.bintray.com/jaxen/jaxen/1.1.4/jaxen-1.1.4.jar
+Download https://jcenter.bintray.com/net/java/dev/javacc/javacc/5.0/javacc-5.0.jar
+Download https://jcenter.bintray.com/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8.jar
+Download https://jcenter.bintray.com/net/sourceforge/saxon/saxon/9.1.0.8/saxon-9.1.0.8-dom.jar
+Download https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar
+Download https://jcenter.bintray.com/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar
+Download https://jcenter.bintray.com/org/mozilla/rhino/1.7R4/rhino-1.7R4.jar
+:findbugsMain
+Download https://jcenter.bintray.com/com/google/code/findbugs/findbugs/3.0.0/findbugs-3.0.0.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/bcel-findbugs/6.0/bcel-findbugs-6.0.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/annotations/3.0.0/annotations-3.0.0.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/jFormatString/3.0.0/jFormatString-3.0.0.pom
+Download https://jcenter.bintray.com/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+Download https://jcenter.bintray.com/jaxen/jaxen/1.1.6/jaxen-1.1.6.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-debug-all/5.0.2/asm-debug-all-5.0.2.pom
+Download https://jcenter.bintray.com/org/ow2/asm/asm-parent/5.0.2/asm-parent-5.0.2.pom
+Download https://jcenter.bintray.com/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+Download https://jcenter.bintray.com/org/apache/commons/commons-parent/17/commons-parent-17.pom
+Download https://jcenter.bintray.com/org/apache/apache/7/apache-7.pom
+Download https://jcenter.bintray.com/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom
+Download https://jcenter.bintray.com/com/google/code/findbugs/findbugs/3.0.0/findbugs-3.0.0.jarDaemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.

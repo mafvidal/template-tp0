@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.aaschmid.gradle.plugins</groupId>
+  <artifactId>gradle-cpd-plugin</artifactId>
+  <version>0.4</version>
+  <name>gradle-cpd-plugin</name>
+  <description>Gradle plugin to find duplicate code using PMDs copy/paste detection (= CPD)</description>
+  <url>https://github.com/aaschmid/gradle-cpd-plugin</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>aaschmid</id>
+      <name>Andreas Schmid</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:aaschmid/gradle-cpd-plugin.git</connection>
+    <developerConnection>scm:git@github.com:aaschmid/gradle-cpd-plugin.git</developerConnection>
+    <url>scm:git@github.com:aaschmid/gradle-cpd-plugin.git</url>
+  </scm>
+</project>

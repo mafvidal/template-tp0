@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="net.sourceforge.pmd" module="pmd" revision="5.3.0" status="release" publication="20160319105316">
+    <license name="BSD-style" url="http://pmd.sourceforge.net/license.html"/>
+    <description homepage="http://pmd.sourceforge.net/">&lt;p&gt;PMD scans Java source code and looks for potential problems like:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Possible bugs - empty try/catch/finally/switch statements&lt;/li&gt;
+  &lt;li&gt;Dead code - unused local variables, parameters and private methods&lt;/li&gt;
+  &lt;li&gt;Suboptimal code - wasteful String/StringBuffer usage&lt;/li&gt;
+  &lt;li&gt;Overcomplicated expressions - unnecessary if statements, for loops that could be while loops&lt;/li&gt;
+  &lt;li&gt;Duplicate code - copied/pasted code means copied/pasted bugs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can &lt;b&gt;&lt;a href=&quot;http://sourceforge.net/project/showfiles.php?group_id=56262&quot;&gt;download everything from here&lt;/a&gt;&lt;/b&gt;, and you can get an overview of all the rules at the &lt;a href=&quot;rules/index.html&quot;&gt;rulesets index&lt;/a&gt; page.&lt;/p&gt;
+&lt;p&gt;PMD is &lt;a href=&quot;integrations.html&quot;&gt;integrated&lt;/a&gt; with JDeveloper, Eclipse, JEdit, JBuilder, BlueJ, CodeGuide, NetBeans/Sun Java Studio Enterprise/Creator, IntelliJ IDEA, TextPad, Maven, Ant, Gel, JCreator, and Emacs.&lt;/p&gt;</description>
+  </info>
+  <configurations>
+    <conf name="default" visibility="public" description="runtime dependencies and master artifact can be used with this conf" extends="runtime,master"/>
+    <conf name="master" visibility="public" description="contains only the artifact published by this module itself, with no transitive dependencies"/>
+    <conf name="compile" visibility="public" description="this is the default scope, used if none is specified. Compile dependencies are available in all classpaths."/>
+    <conf name="provided" visibility="public" description="this is much like compile, but indicates you expect the JDK or a container to provide it. It is only available on the compilation classpath, and is not transitive."/>
+    <conf name="runtime" visibility="public" description="this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath." extends="compile"/>
+    <conf name="test" visibility="private" description="this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases." extends="runtime"/>
+    <conf name="system" visibility="public" description="this scope is similar to provided except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository."/>
+    <conf name="sources" visibility="public" description="this configuration contains the source artifact of this module, if any."/>
+    <conf name="javadoc" visibility="public" description="this configuration contains the javadoc artifact of this module, if any."/>
+    <conf name="optional" visibility="public" description="contains all optional dependencies"/>
+  </configurations>
+  <publications/>
+</ivy-module>
