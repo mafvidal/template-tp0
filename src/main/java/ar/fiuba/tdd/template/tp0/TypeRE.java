@@ -35,11 +35,11 @@ public class TypeRE {
 
         int indexEnd = word.indexOf("]",this.index);
 
+        this.quantifications = new QuantificationsRE(word,indexEnd);
+
         this.word = word.substring(this.index + 1,indexEnd);
 
         this.index = indexEnd;
-
-        this.quantifications = new QuantificationsRE(word,this.index);
 
         SetRE set = new SetRE(this.word);
 

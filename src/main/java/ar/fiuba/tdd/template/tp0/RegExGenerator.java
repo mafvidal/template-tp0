@@ -20,7 +20,7 @@ public class RegExGenerator {
 
         for (int index = 0 ;index < regEx.length() ;index++) {
 
-            if (regEx.charAt(index) == '/') {
+            if (regEx.charAt(index) == '\\') {
 
                 index = this.loadLiteral(regEx, index + 1, numberOfResults);
 
