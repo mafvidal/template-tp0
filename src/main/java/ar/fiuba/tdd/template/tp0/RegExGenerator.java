@@ -5,12 +5,10 @@ import java.util.List;
 
 public class RegExGenerator {
 
-    private int maxLength;
     private List<String> words;
 
-    public RegExGenerator(int maxLength) {
+    public RegExGenerator() {
 
-        this.maxLength = maxLength;
         this.words = new ArrayList<>();
 
     }
@@ -23,7 +21,7 @@ public class RegExGenerator {
 
             if (regEx.charAt(index) == '/') {
 
-                index = this.loadEscape(regEx, index, numberOfResults);
+                index = this.loadEscape(regEx, index+1, numberOfResults);
 
             } else if (regEx.charAt(index) == '[') {
 
@@ -35,7 +33,7 @@ public class RegExGenerator {
 
             } else {
 
-                index = this.loadLiteral(regEx, index, numberOfResults);
+                index = this.loadEscape(regEx, index, numberOfResults);
 
             }
 
@@ -47,23 +45,17 @@ public class RegExGenerator {
 
     private int loadEscape(String regEx,int index,int numberOfResults) {
 
-       /* EscapeRE escape = new EscapeRE(regEx, index, numberOfResults);
-
-        escape.SetMaxquantifications(this.maxLength);
+       EscapeRE escape = new EscapeRE(regEx, index, numberOfResults);
 
         this.save(escape.getCharacters());
 
-        return escape.getNewIndex();*/
-
-        return 66;
+        return escape.getNewIndex();
 
     }
 
     private int loadSet(String regEx,int index,int numberOfResults) {
 
         SetRE set = new SetRE(regEx, index, numberOfResults);
-
-        set.SetMaxquantifications(this.maxLength);
 
         this.save(set.getCharacters());
 
@@ -75,27 +67,11 @@ public class RegExGenerator {
 
         PointRE point = new PointRE(regEx, index, numberOfResults);
 
-        point.SetMaxquantifications(this.maxLength);
-
         this.save(point.getCharacters());
 
         return point.getNewIndex();
 
     }
-
-    private int loadLiteral(String regEx,int index,int numberOfResults) {
-
-       /* LiteralRE literal = new LiteralRE(regEx, index, numberOfResults);
-
-        literal.SetMaxquantifications(this.maxLength);
-
-        this.save(literal.getCharacters());
-
-        return literal.getNewIndex();*/
-        return 1;
-
-    }
-
 
     private void save(List<String> characters) {
 

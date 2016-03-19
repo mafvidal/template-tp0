@@ -61,12 +61,6 @@ public class PointRE {
 
     }
 
-    public void SetMaxquantifications(int maxLength){
-
-        this.quantifications.setMax(maxLength);
-
-    }
-
     private char getCharacter(){
 
         Random rnd = new Random();

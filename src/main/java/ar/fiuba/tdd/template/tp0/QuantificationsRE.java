@@ -4,7 +4,6 @@ public class QuantificationsRE {
 
     private boolean isQuantifications;
     private char sign;
-    private int maxLength;
 
     public QuantificationsRE(){
 
@@ -55,21 +54,15 @@ public class QuantificationsRE {
 
     }
 
-    public void setMax(int maxLength) {
-
-        this.maxLength = maxLength;
-
-    }
-
     private int quantityPlus() {
 
-        return this.determineRandom(Constants.START_PLUS,this.maxLength);
+        return this.determineRandom(Constants.START_PLUS,Constants.MAX_LENGTH);
 
     }
 
     private int quantityAsterisk() {
 
-        return this.determineRandom(Constants.START_ASTERISK,this.maxLength);
+        return this.determineRandom(Constants.START_ASTERISK,Constants.MAX_LENGTH);
 
     }
 

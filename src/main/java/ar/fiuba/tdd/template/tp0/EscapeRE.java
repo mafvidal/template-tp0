@@ -12,9 +12,9 @@ public class EscapeRE {
 
     EscapeRE(String word, int index, int quantity){
 
-        this.character = word.charAt(index+1);
+        this.character = word.charAt(index);
 
-        this.newIndex = index+1;
+        this.newIndex = index;
 
         this.quantity = quantity;
 
@@ -27,12 +27,6 @@ public class EscapeRE {
             this.newIndex = this.newIndex + this.quantifications.newIndex();
 
         }
-
-    }
-
-    public void SetMaxquantifications(int maxLength){
-
-        this.quantifications.setMax(maxLength);
 
     }
 
@@ -65,6 +59,5 @@ public class EscapeRE {
         return this.newIndex;
 
     }
-
 
 }

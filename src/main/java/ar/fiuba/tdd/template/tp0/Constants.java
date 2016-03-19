@@ -2,6 +2,7 @@ package ar.fiuba.tdd.template.tp0;
 
 public class Constants {
 
+    public static final int MAX_LENGTH = 500;
     public static final int MAX_ASCII = 255;
     public static final int INCREASE_QUANTIFICATIONS = 1;
     public static final int START_PLUS = 1;
