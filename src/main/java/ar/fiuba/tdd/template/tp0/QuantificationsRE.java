@@ -5,11 +5,18 @@ public class QuantificationsRE {
     private boolean isQuantifications;
     private char sign;
 
-    public QuantificationsRE(){
+    public QuantificationsRE(String word, int index) {
 
         this.isQuantifications = false;
 
+        if ( index + 1 < word.length() ) {
+
+            this.decide(word.charAt(index + 1));
+
+        }
+
     }
+
 
     public void decide(char character) {
 
@@ -20,7 +27,7 @@ public class QuantificationsRE {
 
     public int quantity() {
 
-        switch (this.sign){
+        switch (this.sign) {
 
             case '?' :
 
@@ -44,13 +51,15 @@ public class QuantificationsRE {
 
     public int newIndex() {
 
-        if( this.isQuantifications )
+        if ( this.isQuantifications ) {
 
             return Constants.INCREASE_QUANTIFICATIONS;
 
-        else
+        } else {
 
             return 0;
+
+        }
 
     }
 
@@ -74,7 +83,10 @@ public class QuantificationsRE {
 
     private int determineRandom(int start, int end) {
 
-        return (int) (Math.random() * (end+1)) + start;
+        int random = (int) (Math.random() * (end + 1)) + start;
+
+        return random;
 
     }
+
 }

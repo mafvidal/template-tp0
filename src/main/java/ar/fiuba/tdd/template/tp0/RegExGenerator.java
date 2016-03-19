@@ -15,13 +15,14 @@ public class RegExGenerator {
 
     public List<String> generate(String regEx, int numberOfResults) {
 
+
         this.initializeList(numberOfResults);
 
-        for (int index=0 ; index<regEx.length() ; index++) {
+        for (int index = 0 ;index < regEx.length() ;index++) {
 
             if (regEx.charAt(index) == '/') {
 
-                index = this.loadEscape(regEx, index+1, numberOfResults);
+                index = this.loadLiteral(regEx, index + 1, numberOfResults);
 
             } else if (regEx.charAt(index) == '[') {
 
@@ -33,7 +34,7 @@ public class RegExGenerator {
 
             } else {
 
-                index = this.loadEscape(regEx, index, numberOfResults);
+                index = this.loadLiteral(regEx, index, numberOfResults);
 
             }
 
@@ -43,49 +44,49 @@ public class RegExGenerator {
 
     }
 
-    private int loadEscape(String regEx,int index,int numberOfResults) {
+    private int loadLiteral(String regEx,int index,int numberOfResults) {
 
-       EscapeRE escape = new EscapeRE(regEx, index, numberOfResults);
+        TypeRE type = new TypeRE(regEx,index,numberOfResults);
 
-        this.save(escape.getCharacters());
+        this.save(type.literal());
 
-        return escape.getNewIndex();
+        return type.getNewIndex();
 
     }
 
     private int loadSet(String regEx,int index,int numberOfResults) {
 
-        SetRE set = new SetRE(regEx, index, numberOfResults);
+        TypeRE type = new TypeRE(regEx,index,numberOfResults);
 
-        this.save(set.getCharacters());
+        this.save(type.set());
 
-        return set.getNewIndex();
+        return type.getNewIndex();
 
     }
 
     private int loadPoint(String regEx,int index,int numberOfResults) {
 
-        PointRE point = new PointRE(regEx, index, numberOfResults);
+        TypeRE type = new TypeRE(regEx,index,numberOfResults);
 
-        this.save(point.getCharacters());
+        this.save(type.point());
 
-        return point.getNewIndex();
+        return type.getNewIndex();
 
     }
 
     private void save(List<String> characters) {
 
-        for (int i=0;i<this.words.size();i++){
+        for (int i = 0;i < this.words.size();i++) {
 
-            this.words.set(i,this.words.get(i)+characters.get(i));
+            this.words.set(i,this.words.get(i) + characters.get(i));
 
         }
 
     }
 
-    private void initializeList(int numberOfResults){
+    private void initializeList(int numberOfResults) {
 
-        for (int i=0;i<numberOfResults;i++){
+        for (int i = 0;i < numberOfResults;i++) {
 
             this.words.add("");
 
