@@ -10,7 +10,7 @@ public class PointRE implements CharactersRE {
 
         int randomNum = random.nextInt((Constants.MAX_ASCII - Constants.MIN_ASCII) + 1) + Constants.MIN_ASCII;
 
-        return Character.toString ((char)(randomNum));
+        return Character.toString((char) (randomNum));
 
     }
 
