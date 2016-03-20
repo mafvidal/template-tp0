@@ -6,9 +6,11 @@ public class PointRE implements CharactersRE {
 
     public String getCharacters() {
 
-        Random rnd = new Random();
+        Random random = new Random();
 
-        return String.valueOf((char) (rnd.nextInt(Constants.MAX_ASCII)));
+        int randomNum = random.nextInt((Constants.MAX_ASCII - Constants.MIN_ASCII) + 1) + Constants.MIN_ASCII;
+
+        return Character.toString ((char)(randomNum));
 
     }
 
