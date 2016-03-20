@@ -8,14 +8,14 @@ public class SetRE implements CharactersRE {
 
     SetRE(String word) {
 
-        this.word = word;
+        //this.word = word;
+        this.word = word.replaceAll("\\\\", "");
 
     }
 
     public String getCharacters() {
 
         Random rnd = new Random();
-
 
         int position = rnd.nextInt(this.word.length());
 

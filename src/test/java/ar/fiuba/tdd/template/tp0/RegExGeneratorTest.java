@@ -75,4 +75,9 @@ public class RegExGeneratorTest {
         assertTrue(validate("..*", 1));
     }
 
+    @Test
+    public void testMultiplesSets() {
+        assertTrue(validate("[abc][def]", 1));
+    }
+
 }
